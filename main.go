@@ -15,7 +15,8 @@ func main() {
 	flag.Parse()
 
 	if playerCount < 2 || playerCount > 6 {
-		panic("The number of players must be between 2 and 6!")
+		log.Fatal("The number of players must be between 2 and 6!")
+		return
 	}
 
 	rand.Seed(time.Now().UnixNano())
