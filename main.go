@@ -20,14 +20,13 @@ func main() {
 	}
 
 	rand.Seed(time.Now().UnixNano())
-	var game monopoly.Game
-	game.Init(playerCount)
-
+	
+	game := monopoly.InitGame(playerCount)
 	log.Printf("Starting a new game with %d players...\n", playerCount)
 
 	var winner *monopoly.Player
 	for ; winner == nil; winner = game.IsOver() {
-		game.Next()
+		game.NextTurn()
 	}
 
 	log.Println()

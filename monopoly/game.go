@@ -10,7 +10,9 @@ type Game struct {
 	turnCount        int
 }
 
-func (g *Game) Init(playerCount int) {
+func InitGame(playerCount int) Game {
+	var g Game
+
 	g.turnCount = 1
 	g.remainingPlayers = playerCount
 	firstPlayer := Player{
@@ -38,6 +40,8 @@ func (g *Game) Init(playerCount int) {
 
 		g.turnQueue.Push(&player)
 	}
+
+	return g
 }
 
 func (g *Game) IsOver() *Player {
@@ -48,7 +52,7 @@ func (g *Game) IsOver() *Player {
 	}
 }
 
-func (g *Game) Next() {
+func (g *Game) NextTurn() {
 	player := g.turnQueue.Pop()
 	
 	log.Println()
