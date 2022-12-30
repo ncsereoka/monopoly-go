@@ -205,7 +205,7 @@ func (p *Player) move(first int, second int) bool {
 	nextSquare := (nextPos) % SquareCount
 	p.square = nextSquare
 
-	log.Printf("P%d rolls %d & %d", p.Id, first, second)
+	// log.Printf("P%d rolls %d & %d", p.Id, first, second)
 	firstPart := fmt.Sprintf("P%d moved to square#%d:", p.Id, p.square)
 
 	if nextPos >= 40 {
@@ -278,7 +278,7 @@ func (p *Player) move(first int, second int) bool {
 		fallthrough
 	case 35:
 		station := PropertyMap[int(p.square)]
-		log.Printf("%s %s", firstPart, station.name)
+		log.Printf("%s %s Station", firstPart, station.name)
 		if station.owner == 0 {
 			if station.price < p.balance {
 				p.pay(station.price)

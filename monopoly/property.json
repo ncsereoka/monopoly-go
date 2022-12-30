@@ -1,0 +1,268 @@
+{
+    "1": {
+        "name": "Old Kent Road",
+        "price": 60,
+        "rentSite": 2,
+        "rent1house": 10,
+        "rent2house": 30,
+        "rent3house": 90,
+        "rent4house": 160,
+        "rentHotel": 250,
+        "buildingCost": 50
+    },
+    "3": {
+        "name": "Whitechapel Road",
+        "price": 60,
+        "rentSite": 4,
+        "rent1house": 20,
+        "rent2house": 60,
+        "rent3house": 180,
+        "rent4house": 320,
+        "rentHotel": 450,
+        "buildingCost": 50
+    },
+    "5": {
+        "name": "Kings Cross",
+        "price": 200
+    },
+    "6": {
+        "name": "The Angel, Islington",
+        "price": 100,
+        "rentSite": 6,
+        "rent1house": 30,
+        "rent2house": 90,
+        "rent3house": 270,
+        "rent4house": 400,
+        "rentHotel": 550,
+        "buildingCost": 50
+    },
+    "8": {
+        "name": "Euston Road",
+        "price": 100,
+        "rentSite": 6,
+        "rent1house": 30,
+        "rent2house": 90,
+        "rent3house": 270,
+        "rent4house": 400,
+        "rentHotel": 550,
+        "buildingCost": 50
+    },
+    "9": {
+        "name": "Pentonville Road",
+        "price": 120,
+        "rentSite": 8,
+        "rent1house": 40,
+        "rent2house": 100,
+        "rent3house": 300,
+        "rent4house": 450,
+        "rentHotel": 600,
+        "buildingCost": 50
+    },
+    "11": {
+        "name": "Pall Mall",
+        "price": 140,
+        "rentSite": 10,
+        "rent1house": 50,
+        "rent2house": 150,
+        "rent3house": 450,
+        "rent4house": 625,
+        "rentHotel": 750,
+        "buildingCost": 100
+    },
+    "12": {
+        "name": "Electric Company",
+        "price": 150
+    },
+    "13": {
+        "name": "Whitehall",
+        "price": 140,
+        "rentSite": 10,
+        "rent1house": 50,
+        "rent2house": 150,
+        "rent3house": 450,
+        "rent4house": 625,
+        "rentHotel": 750,
+        "buildingCost": 100
+    },
+    "14": {
+        "name": "Northumberland Avenue",
+        "price": 160,
+        "rentSite": 12,
+        "rent1house": 60,
+        "rent2house": 180,
+        "rent3house": 500,
+        "rent4house": 700,
+        "rentHotel": 900,
+        "buildingCost": 100
+    },
+    "15": {
+        "name": "Marylebone",
+        "price": 200
+    },
+    "16": {
+        "name": "Bow Street",
+        "price": 180,
+        "rentSite": 14,
+        "rent1house": 70,
+        "rent2house": 200,
+        "rent3house": 550,
+        "rent4house": 750,
+        "rentHotel": 950,
+        "buildingCost": 100
+    },
+    "18": {
+        "name": "Marlborough Street",
+        "price": 180,
+        "rentSite": 14,
+        "rent1house": 70,
+        "rent2house": 200,
+        "rent3house": 550,
+        "rent4house": 750,
+        "rentHotel": 950,
+        "buildingCost": 100
+    },
+    "19": {
+        "name": "Vine Street",
+        "price": 200,
+        "rentSite": 16,
+        "rent1house": 80,
+        "rent2house": 220,
+        "rent3house": 600,
+        "rent4house": 800,
+        "rentHotel": 1000,
+        "buildingCost": 100
+    },
+    "21": {
+        "name": "Strand",
+        "price": 200,
+        "rentSite": 18,
+        "rent1house": 90,
+        "rent2house": 250,
+        "rent3house": 700,
+        "rent4house": 875,
+        "rentHotel": 1050,
+        "buildingCost": 150
+    },
+    "23": {
+        "name": "Fleet Street",
+        "price": 200,
+        "rentSite": 18,
+        "rent1house": 90,
+        "rent2house": 250,
+        "rent3house": 700,
+        "rent4house": 875,
+        "rentHotel": 1050,
+        "buildingCost": 150
+    },
+    "24": {
+        "name": "Trafalgar Square",
+        "price": 240,
+        "rentSite": 20,
+        "rent1house": 100,
+        "rent2house": 300,
+        "rent3house": 750,
+        "rent4house": 925,
+        "rentHotel": 1100,
+        "buildingCost": 150
+    },
+    "25": {
+        "name": "Fenchurch Street",
+        "price": 200
+    },
+    "26": {
+        "name": "Leicester Square",
+        "price": 260,
+        "rentSite": 22,
+        "rent1house": 110,
+        "rent2house": 330,
+        "rent3house": 800,
+        "rent4house": 975,
+        "rentHotel": 1150,
+        "buildingCost": 150
+    },
+    "27": {
+        "name": "Coventry Street",
+        "price": 260,
+        "rentSite": 22,
+        "rent1house": 110,
+        "rent2house": 330,
+        "rent3house": 800,
+        "rent4house": 975,
+        "rentHotel": 1150,
+        "buildingCost": 150
+    },
+    "28": {
+        "name": "Water Works",
+        "price": 150
+    },
+    "29": {
+        "name": "Piccadilly",
+        "price": 280,
+        "rentSite": 24,
+        "rent1house": 120,
+        "rent2house": 360,
+        "rent3house": 850,
+        "rent4house": 1025,
+        "rentHotel": 1200,
+        "buildingCost": 150
+    },
+    "31": {
+        "name": "Regent Street",
+        "price": 300,
+        "rentSite": 26,
+        "rent1house": 130,
+        "rent2house": 390,
+        "rent3house": 900,
+        "rent4house": 1100,
+        "rentHotel": 1275,
+        "buildingCost": 200
+    },
+    "32": {
+        "name": "Oxford Street",
+        "price": 300,
+        "rentSite": 26,
+        "rent1house": 130,
+        "rent2house": 390,
+        "rent3house": 900,
+        "rent4house": 1100,
+        "rentHotel": 1275,
+        "buildingCost": 200
+    },
+    "34": {
+        "name": "Bond Street",
+        "price": 320,
+        "rentSite": 28,
+        "rent1house": 150,
+        "rent2house": 450,
+        "rent3house": 1000,
+        "rent4house": 1200,
+        "rentHotel": 1400,
+        "buildingCost": 200
+    },
+    "35": {
+        "name": "Liverpool Street",
+        "price": 200
+    },
+    "37": {
+        "name": "Park Lane",
+        "price": 350,
+        "rentSite": 35,
+        "rent1house": 175,
+        "rent2house": 500,
+        "rent3house": 1100,
+        "rent4house": 1300,
+        "rentHotel": 1500,
+        "buildingCost": 200
+    },
+    "39": {
+        "name": "Mayfair",
+        "price": 400,
+        "rentSite": 50,
+        "rent1house": 200,
+        "rent2house": 600,
+        "rent3house": 1400,
+        "rent4house": 1700,
+        "rentHotel": 2000,
+        "buildingCost": 200
+    }
+}

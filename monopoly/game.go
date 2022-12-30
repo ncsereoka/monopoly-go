@@ -57,8 +57,8 @@ func (g *Game) IsOver() *Player {
 func (g *Game) NextTurn() {
 	player := g.turnQueue.Pop()
 
-	log.Println()
-	log.Printf("Turn #%d - P%d on square#%d", g.turnCount, player.Id, player.square)
+	// log.Println()
+	// log.Printf("Turn #%d - P%d on square#%d", g.turnCount, player.Id, player.square)
 
 	canContinue := player.PlayTurn()
 	if canContinue {
