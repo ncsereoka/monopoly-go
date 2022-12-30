@@ -20,7 +20,7 @@ func main() {
 	}
 
 	rand.Seed(time.Now().UnixNano())
-	
+
 	game := monopoly.InitGame(playerCount)
 	log.Printf("Starting a new game with %d players...\n", playerCount)
 

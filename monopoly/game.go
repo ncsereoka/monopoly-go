@@ -20,6 +20,7 @@ func InitGame(playerCount int) Game {
 		balance: 1500,
 		square:  0,
 	}
+	PlayerMap[1] = &firstPlayer
 
 	firstPlayerTurn := &PlayerTurn{
 		player: &firstPlayer,
@@ -33,10 +34,11 @@ func InitGame(playerCount int) Game {
 
 	for i := 1; i < playerCount; i++ {
 		player := Player{
-			Id:      uint8(i) + 1,
+			Id:      i + 1,
 			balance: 1500,
 			square:  0,
 		}
+		PlayerMap[i+1] = &player
 
 		g.turnQueue.Push(&player)
 	}
@@ -54,15 +56,15 @@ func (g *Game) IsOver() *Player {
 
 func (g *Game) NextTurn() {
 	player := g.turnQueue.Pop()
-	
+
 	log.Println()
-	log.Printf("Turn #%d - P%d", g.turnCount, player.Id)
-	
+	log.Printf("Turn #%d - P%d on square#%d", g.turnCount, player.Id, player.square)
+
 	canContinue := player.PlayTurn()
 	if canContinue {
 		g.turnQueue.Push(player)
 	} else {
-		log.Printf("P%d stopped on Go: they've been kicked out of the game!", player.Id)
+		log.Printf("P%d has more than $10000: they've been kicked out of the game!", player.Id)
 		g.remainingPlayers--
 	}
 
