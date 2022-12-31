@@ -8,17 +8,17 @@ import (
 
 type Property struct {
 	owner        int
-	name         string
-	price        int
+	Name         string
+	Price        int
 	houses       uint8
 	hotel        bool
-	rentSite     int
-	rent1house   int
-	rent2house   int
-	rent3house   int
-	rent4house   int
-	rentHotel    int
-	buildingCost int
+	RentSite     int
+	Rent1house   int
+	Rent2house   int
+	Rent3house   int
+	Rent4house   int
+	RentHotel    int
+	BuildingCost int
 }
 
 var PropertyMap = map[int]*Property{}

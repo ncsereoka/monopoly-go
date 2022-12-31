@@ -205,7 +205,7 @@ func (p *Player) move(first int, second int) bool {
 	nextSquare := (nextPos) % SquareCount
 	p.square = nextSquare
 
-	// log.Printf("P%d rolls %d & %d", p.Id, first, second)
+	log.Printf("P%d rolls %d & %d", p.Id, first, second)
 	firstPart := fmt.Sprintf("P%d moved to square#%d:", p.Id, p.square)
 
 	if nextPos >= 40 {
@@ -247,13 +247,13 @@ func (p *Player) move(first int, second int) bool {
 		fallthrough
 	case 28:
 		utility := PropertyMap[int(p.square)]
-		log.Printf("%s %s", firstPart, utility.name)
+		log.Printf("%s %s", firstPart, utility.Name)
 		if utility.owner == 0 {
-			if utility.price < p.balance {
-				p.pay(utility.price)
+			if utility.Price < p.balance {
+				p.pay(utility.Price)
 				p.utilities++
 				utility.owner = int(p.Id)
-				log.Printf("P%d bought %s", p.Id, utility.name)
+				log.Printf("P%d bought %s", p.Id, utility.Name)
 			}
 		} else {
 			roll := first + second
@@ -278,13 +278,13 @@ func (p *Player) move(first int, second int) bool {
 		fallthrough
 	case 35:
 		station := PropertyMap[int(p.square)]
-		log.Printf("%s %s Station", firstPart, station.name)
+		log.Printf("%s %s Station", firstPart, station.Name)
 		if station.owner == 0 {
-			if station.price < p.balance {
-				p.pay(station.price)
+			if station.Price < p.balance {
+				p.pay(station.Price)
 				p.stations++
 				station.owner = int(p.Id)
-				log.Printf("P%d bought %s", p.Id, station.name)
+				log.Printf("P%d bought %s", p.Id, station.Name)
 			}
 		} else {
 			owner := PlayerMap[station.owner]
@@ -315,7 +315,7 @@ func (p *Player) move(first int, second int) bool {
 		log.Printf("%s Go", firstPart)
 		return false
 	default:
-		log.Printf("%s %s", firstPart, PropertyMap[int(p.square)].name)
+		log.Printf("%s %s", firstPart, PropertyMap[int(p.square)].Name)
 		return false
 	}
 }
